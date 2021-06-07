@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="655129" started-at="2021-06-07T13:31:26 IST" finished-at="2021-06-07T13:42:21 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunners.TestRunner@64cd705f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="655129" started-at="2021-06-07T13:31:26 IST" finished-at="2021-06-07T13:42:21 IST">
+      <class name="com.testrunners.TestRunner">
+        <test-method status="PASS" signature="testStartedPointer()[pri:0, instance:com.testrunners.TestRunner@64cd705f]" name="testStartedPointer" is-config="true" duration-ms="23" started-at="2021-06-07T13:31:26 IST" finished-at="2021-06-07T13:31:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStartedPointer -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunners.TestRunner@64cd705f]" name="setUpClass" is-config="true" duration-ms="1999" started-at="2021-06-07T13:31:26 IST" finished-at="2021-06-07T13:31:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunners.TestRunner@64cd705f]" name="runScenario" duration-ms="442857" started-at="2021-06-07T13:31:28 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-07T13:38:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Automation of flight booking with Make My Trip"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Automation of flight booking with Make My Trip]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunners.TestRunner@64cd705f]" name="runScenario" duration-ms="209965" started-at="2021-06-07T13:38:51 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-07T13:42:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Automation of flight booking with Make My Trip"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Automation of flight booking with Make My Trip]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 0, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+at java.util.ArrayList.get(ArrayList.java:435)
+at com.pages.FinalPage.verifyFlightDetails(FinalPage.java:33)
+at com.stepdefinitions.MMTStepDefinition.verifyFlightDetails(MMTStepDefinition.java:121)
+at ✽.Verify Booking details(file:///C:/Users/barkha.sinha/Internship_Training/TrainingAssignment/src/test/resources/FeatureFiles/MMTAutomation.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunners.TestRunner@64cd705f]" name="tearDownClass" is-config="true" duration-ms="212" started-at="2021-06-07T13:42:21 IST" finished-at="2021-06-07T13:42:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="testEndPointer()[pri:0, instance:com.testrunners.TestRunner@64cd705f]" name="testEndPointer" is-config="true" duration-ms="5848" started-at="2021-06-07T13:42:21 IST" finished-at="2021-06-07T13:42:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEndPointer -->
+      </class> <!-- com.testrunners.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

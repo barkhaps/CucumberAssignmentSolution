@@ -1,0 +1,598 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "The webdriver is initialized and the user is on MMT homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-06-07T08:01:29.404Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12861000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.initialiseDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 42514000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.navigateToApplication()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Automation of flight booking with Make My Trip",
+        "description": "",
+        "id": "automation-of-flight-booking-with-make-my-trip;automation-of-flight-booking-with-make-my-trip;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2073000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5049000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on Flights",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.clickOnFlight()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9348000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Select Trip Type and verify change",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.selectTripType(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Trip Type",
+                  "round trip"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 74599000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Fill journey details and Continue",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.fillJourneyDetAndContinue(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "From City",
+                  "Delhi"
+                ]
+              },
+              {
+                "cells": [
+                  "To City",
+                  "Bhubaneswar"
+                ]
+              },
+              {
+                "cells": [
+                  "Depart Date",
+                  "28-07-2021"
+                ]
+              },
+              {
+                "cells": [
+                  "Return Date",
+                  "30-07-2021"
+                ]
+              },
+              {
+                "cells": [
+                  "No Of Adults",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "No Of Children",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "No Of Infants",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Suggestion Index",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25626000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Select Airline filter and verify",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.selectFlightFilter(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Airline Name",
+                  "IndiGo"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52023000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Sort Grid and Select Nth Record",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.sortAndSelect(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sort Column",
+                  "Duration"
+                ]
+              },
+              {
+                "cells": [
+                  "Sort Type",
+                  "ascending"
+                ]
+              },
+              {
+                "cells": [
+                  "N",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Fare Type",
+                  "Saver"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19099000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Switch to Review Page Tab",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.switchToNewTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6300000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Verify Booking details",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.verifyFlightDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44416000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Verify Fare Summary Data",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.verifyFareSummaryData()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52979000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Uncheck and verify charity",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.uncheckAndVerifyCharity()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59734000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Select insurance if available and verify",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.checkAndVerifyInsurance()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2128000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Switch to Home Tab",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.closeCurrentTabAndSwitch()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32838000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Navigate to Homepage",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.navigateToHomePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MMT_Automation"
+          },
+          {
+            "name": "@MMT_Automation_Round"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "The webdriver is initialized and the user is on MMT homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-06-07T08:08:51.528Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6793000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.initialiseDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 32694000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.navigateToApplication()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Automation of flight booking with Make My Trip",
+        "description": "",
+        "id": "automation-of-flight-booking-with-make-my-trip;automation-of-flight-booking-with-make-my-trip;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1961000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5126000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on Flights",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.clickOnFlight()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15718000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Select Trip Type and verify change",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.selectTripType(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Trip Type",
+                  "oneway"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 76154000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Fill journey details and Continue",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.fillJourneyDetAndContinue(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "From City",
+                  "Delhi"
+                ]
+              },
+              {
+                "cells": [
+                  "To City",
+                  "Bhubaneswar"
+                ]
+              },
+              {
+                "cells": [
+                  "Depart Date",
+                  "28-07-2021"
+                ]
+              },
+              {
+                "cells": [
+                  "Return Date",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "No Of Adults",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "No Of Children",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "No Of Infants",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Suggestion Index",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27159000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Select Airline filter and verify",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.selectFlightFilter(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Airline Name",
+                  "IndiGo"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19892000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Sort Grid and Select Nth Record",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.sortAndSelect(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sort Column",
+                  "Duration"
+                ]
+              },
+              {
+                "cells": [
+                  "Sort Type",
+                  "descending"
+                ]
+              },
+              {
+                "cells": [
+                  "N",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Fare Type",
+                  "Saver"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18296000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Switch to Review Page Tab",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.switchToNewTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\r\n\tat java.util.ArrayList.get(ArrayList.java:435)\r\n\tat com.pages.FinalPage.verifyFlightDetails(FinalPage.java:33)\r\n\tat com.stepdefinitions.MMTStepDefinition.verifyFlightDetails(MMTStepDefinition.java:121)\r\n\tat ✽.Verify Booking details(file:///C:/Users/barkha.sinha/Internship_Training/TrainingAssignment/src/test/resources/FeatureFiles/MMTAutomation.feature:27)\r\n",
+              "duration": 6136000000,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "Verify Booking details",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.verifyFlightDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "Verify Fare Summary Data",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.verifyFareSummaryData()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "Uncheck and verify charity",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.uncheckAndVerifyCharity()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Select insurance if available and verify",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.checkAndVerifyInsurance()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Switch to Home Tab",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.closeCurrentTabAndSwitch()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Navigate to Homepage",
+            "match": {
+              "location": "com.stepdefinitions.MMTStepDefinition.navigateToHomePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MMT_Automation"
+          },
+          {
+            "name": "@MMT_Automation_OneWay"
+          }
+        ]
+      }
+    ],
+    "name": "Automation of flight booking with Make My Trip",
+    "description": "",
+    "id": "automation-of-flight-booking-with-make-my-trip",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/MMTAutomation.feature",
+    "tags": []
+  }
+]
