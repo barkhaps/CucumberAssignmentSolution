@@ -20,9 +20,9 @@ import javax.mail.Store;
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 	
-	String emailFrom = "test@highradius.com";
-	String emailFromPw = "test@highradius";
-	String toEmails = "barkha.sinha@highradius.com";
+	String emailFrom = "";
+	String emailFromPw = "";
+	String toEmails = "";
 	
 	@BeforeSuite
 	public void testStartedPointer() {
