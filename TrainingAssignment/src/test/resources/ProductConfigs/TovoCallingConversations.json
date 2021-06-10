@@ -1,0 +1,23 @@
+{
+	"TestConversation1": {
+		"CallerSentence": "Hello! How are you? Hope you are doing good! The calling feature is being tested right now.",
+		"ReceiverSentence": "Ok Nice",
+		"CallerSentence1": "Call Testing complete! Bye",
+		"ReceiverSentence1": "Ok bye"
+	},
+	"TestConversation2": {
+		"CallerSentence": "Thank you for the Call. Hangup now!",
+		"ReceiverSentence": "Ok Nice, I will"
+	},
+	"TestConversation3": {
+		"CallerSentence": "This is the first Line I speak",
+		"CallerSentence1": "This is the second Line I speak",
+		"ReceiverSentence": "Ok Nice, Very nice lines"
+	},
+	"TestConversation4": {
+		"CallerSentence": "Just The caller speaking"
+	},
+	"TestConversation5": {
+		"ReceiverSentence": "Just The receiver speaking"
+	}
+}
