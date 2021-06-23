@@ -37,20 +37,20 @@ public class TextSpeech {
 	}
 
 	public static void main(String[] args) throws Throwable {
-		LinkedTreeMap<String, String> sentencesToSpeak = getConversationFromJSON("TestConversation1");
+		LinkedTreeMap<String, String> sentencesToSpeak = getConversationFromJSON("OutgoingCallConvo1");
 		System.setProperty("FreeTTSSynthEngineCentral", "com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
 		System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
 		Central.registerEngineCentral("com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
 		Synthesizer synthesizer = Central.createSynthesizer(new SynthesizerModeDesc(Locale.ENGLISH));
 		for (String sentences : sentencesToSpeak.keySet()) {
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 			if (sentences.toLowerCase().contains("caller")) {
 				System.out.println("Speaker is caller, unmuting caller and muting receiver");
 			} else if (sentences.toLowerCase().contains("receiver")) {
 				System.out.println("Speaker is receiver, unmuting receiver and muting caller");
 			}
 			synthesizer.allocate();
-			synthesizer.getSynthesizerProperties().setSpeakingRate(100.0f);
+			synthesizer.getSynthesizerProperties().setSpeakingRate(120.0f);
 			synthesizer.resume();
 			System.out.println("Sentence spoken: " + sentencesToSpeak.get(sentences));
 			synthesizer.speakPlainText(sentencesToSpeak.get(sentences).toString(), null);

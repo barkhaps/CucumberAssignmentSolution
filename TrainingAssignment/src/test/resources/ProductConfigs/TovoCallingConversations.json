@@ -19,5 +19,16 @@
 	},
 	"TestConversation5": {
 		"ReceiverSentence": "Just The receiver speaking"
+	},
+	"OutgoingCallConvo1": {
+		"CallerSentence": "Hello Jane, this is Dany calling from ABC Corporation.This call is regarding the invoice number 8895463063 which is past due, when can we expect the payment for the invoice?",
+		"ReceiverSentence": "Can you please mention the amount for the invoice?",
+		"CallerSentence1": "Yeah its 3953 dollars",
+		"ReceiverSentence1": "I'll surely make the payment by end of next week",
+		"CallerSentence2": "There are a couple of more invoices,which require payment, when can I expect the payment for them?",
+		"ReceiverSentence2": "I raised a dispute for invoice number 4095202369.",
+		"CallerSentence3": "okay, How about the other invoices",
+		"ReceiverSentence3": "Could you please call me back next week ?",
+		"CallerSentence4": "okay, thanks bye"
 	}
 }
