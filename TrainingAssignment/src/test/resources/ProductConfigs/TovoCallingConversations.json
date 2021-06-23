@@ -1,0 +1,34 @@
+{
+	"TestConversation1": {
+		"CallerSentence": "Hello! How are you? Hope you are doing good! The calling feature is being tested right now.",
+		"ReceiverSentence": "Ok Nice",
+		"CallerSentence1": "Call Testing complete! Bye",
+		"ReceiverSentence1": "Ok bye"
+	},
+	"TestConversation2": {
+		"CallerSentence": "Thank you for the Call. Hangup now!",
+		"ReceiverSentence": "Ok Nice, I will"
+	},
+	"TestConversation3": {
+		"CallerSentence": "This is the first Line I speak",
+		"CallerSentence1": "This is the second Line I speak",
+		"ReceiverSentence": "Ok Nice, Very nice lines"
+	},
+	"TestConversation4": {
+		"CallerSentence": "Just The caller speaking"
+	},
+	"TestConversation5": {
+		"ReceiverSentence": "Just The receiver speaking"
+	},
+	"OutgoingCallConvo1": {
+		"CallerSentence": "Hello Jane, this is Dany calling from ABC Corporation.This call is regarding the invoice number 8895463063 which is past due, when can we expect the payment for the invoice?",
+		"ReceiverSentence": "Can you please mention the amount for the invoice?",
+		"CallerSentence1": "Yeah its 3953 dollars",
+		"ReceiverSentence1": "I'll surely make the payment by end of next week",
+		"CallerSentence2": "There are a couple of more invoices,which require payment, when can I expect the payment for them?",
+		"ReceiverSentence2": "I raised a dispute for invoice number 4095202369.",
+		"CallerSentence3": "okay, How about the other invoices",
+		"ReceiverSentence3": "Could you please call me back next week ?",
+		"CallerSentence4": "okay, thanks bye"
+	}
+}
